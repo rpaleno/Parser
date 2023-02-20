@@ -68,7 +68,7 @@ class lexer:
                 string = string.replace(string[:int(result.end())], '', 1)
                 string = string.strip()
 
-class MyFirstGUI: 
+class MyGUI: 
     def __init__(self,root,count = 0,count2 = 0):
         #Master is the default parent object of all widgets.
         self.master = root
@@ -403,5 +403,5 @@ class MyFirstGUI:
 
 if __name__ == '__main__':
     myTkRoot = Tk()
-    my_gui = MyFirstGUI(myTkRoot)
+    my_gui = MyGUI(myTkRoot)
     myTkRoot.mainloop()
