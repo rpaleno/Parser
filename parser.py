@@ -1,14 +1,10 @@
 import re
 from tkinter import *
 
-
-
 class lexer:
-
     def __init__(self,tokenlist = []):
         self.tokenlist = tokenlist
         
-
     def cutOneLineTokens(self,string):
         while (string != ""): #while string is not empty
             result = re.match(r'^if|^else|^int|^float', string) #keywords to be matched
